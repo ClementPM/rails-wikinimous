@@ -2,5 +2,6 @@
 <h2><%= @article.title %></h2>
 <p><%= @article.content %></p>
 
- <%= link_to 'See all articles', articles_path %> 
+ <%= link_to 'Delete articles', article_path(@article), method: :delete, data: {confirm: "Are you sure?"}%> 
 
+ <%= link_to 'See all articles', articles_path %>

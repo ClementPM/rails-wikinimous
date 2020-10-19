@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
 .navbar {
   position: sticky !important;
   top: 0;
@@ -30,5 +33,11 @@
   margin-top: 40px;
 }
 
-body {
+h1 {
+  font-family: "Krona One", sans-serif;
+  text-align: center;
+}
+
+ul {
+  padding-top: 40px;
 }

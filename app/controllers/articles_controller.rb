@@ -21,7 +21,7 @@ before_action :set_article, only: [:show, :edit, :update, :destroy]
   end
 
   def edit
-  # @article = Article.find(params[:id])
+  @article = Article.find(params[:id])
   end
 
   def update

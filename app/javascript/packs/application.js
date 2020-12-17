@@ -11,15 +11,15 @@ import { initSweetalert } from '../plugins/init_sweetalert';
 
 
 document.addEventListener("turbolinks:load", function() {
-  initSweetalert('#sweet-alert', {
-      title: "Sure?",
-      text: "Once deleted, no more turning back!",
-      icon: "warning",
-          if (value) {
-              const link = document.querySelector('#delete-link');
-              link.click();
-          }
-      });
+initSweetalert('#sweet-alert', {
+    title: "Sure?",
+    text: "Once deleted, no more turning back!",
+    icon: "warning",
+        if (value) {
+            const link = document.querySelector('#delete-link');
+            link.click();
+        }
+    });
 });
 
 // Uncomment to copy all static images under ../images to the output folder and reference

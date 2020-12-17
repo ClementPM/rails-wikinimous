@@ -5,8 +5,22 @@
 
 require("@rails/ujs").start()
 require("turbolinks").start()
-require("channels")
+require("channels");
 
+import { initSweetalert } from '../plugins/init_sweetalert';
+
+
+document.addEventListener("turbolinks:load", function() {
+initSweetalert('#sweet-alert', {
+    title: "Sure?",
+    text: "Once deleted, no more turning back!",
+    icon: "warning",
+        if (value) {
+            const link = document.querySelector('#delete-link');
+            link.click();
+        }
+    });
+});
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

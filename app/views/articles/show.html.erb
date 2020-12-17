@@ -2,9 +2,9 @@
 <h2><%= @article.title %></h2>
 <p><%= @article.content %></p>
 
-  <%= link_to article_path(@article), method: :delete, data: {confirm: "Are you sure?"}, class: 'btn btn-danger' do %> 
+<div class='btn btn-danger' id="sweet-alert">
   <i class="far fa-trash-alt"></i> Delete
+  <%= link_to '', article_path(@article), method: :delete, id: 'delete-link' %> 
+</div>
 
-<% end %>
-
- <%= link_to 'See all articles', articles_path, class: 'btn btn-secondary' %>
+<%= link_to 'See all articles', articles_path, class: 'btn btn-secondary' %>
